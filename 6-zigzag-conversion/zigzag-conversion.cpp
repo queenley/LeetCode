@@ -17,7 +17,6 @@ public:
                 if (s_idx >= n) break;
             }
         }
-
         return output;
     }
 };

@@ -5,12 +5,10 @@ public:
         int haystack_size = haystack.size();
         if (needle_size > haystack_size) return -1;
         int index = 0;        
-        while (index <= haystack_size - needle_size) {            
-            int i = index;
+        while (index <= haystack_size - needle_size) {                        
             for (int j = 0; j < needle_size; j++) {                
-                if (needle[j] == haystack[i]) {
-                    if (j == needle_size - 1) return index;
-                    i++;
+                if (needle[j] == haystack[index + j]) {
+                    if (j == needle_size - 1) return index;                    
                 }
                 else break;
             }

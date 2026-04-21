@@ -59,12 +59,9 @@ public:
             return sentence;
         }
 
-        int spaces = numWord - 1, start = 0;
-        int base  = remain_width / spaces;  
-        int extra = remain_width % spaces;  
-
+        int spaces = numWord - 1, start = 0;        
         for (int i = 0; i < spaces; i++) {
-            int space_count = 1 + base + (i < extra ? 1 : 0);  
+            int space_count = 1 + remain_width / spaces + (i < remain_width % spaces ? 1 : 0);  
             int idx_space = sentence.find(" ", start);
             sentence.replace(idx_space, 1, string(space_count, ' '));
             start = idx_space + space_count;

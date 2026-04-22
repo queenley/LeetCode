@@ -16,7 +16,6 @@ public:
             end--;
             if (start >= end) break;
         }
-        
         return true;             
     }
 };

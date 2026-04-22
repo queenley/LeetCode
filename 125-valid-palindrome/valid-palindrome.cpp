@@ -9,7 +9,6 @@ public:
             start++;
             end--;            
         }
-
         return true;             
     }
 };

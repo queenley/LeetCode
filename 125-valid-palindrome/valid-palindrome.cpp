@@ -7,8 +7,9 @@ public:
             if (!isalnum(s[end])) { end--; continue; }
             if (tolower(s[start]) != tolower(s[end])) return false;
             start++;
-            end--;            
+            end--;
         }
+        
         return true;             
     }
 };

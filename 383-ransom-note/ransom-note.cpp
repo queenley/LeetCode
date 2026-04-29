@@ -12,6 +12,7 @@ public:
             if (magazine_dict[n] == 0 || magazine_dict.find(n) == magazine_dict.end()) return false;            
             magazine_dict[n]--;
         }
+        
         return true;
     }
 };

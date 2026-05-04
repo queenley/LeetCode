@@ -21,6 +21,7 @@ public:
                 else right--;
             }            
         }        
+        
         return output;
     }
 };
